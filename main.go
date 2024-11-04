@@ -22,10 +22,10 @@ import (
 // @schemes http https
 
 func main() {
-	// Load environment variables from .env file
+	// Load environment variables from .env.example file
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("Error loading .env file")
+		log.Fatal("Error loading .env.example file")
 	}
 
 	// Initialize environment variables
